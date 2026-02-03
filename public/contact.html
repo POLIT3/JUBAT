@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JUBAT Purified Drinking Water</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">JUBAT</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="quality.html" class="nav-link">Quality</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Get in Touch With Us</h1>
+        <p>We're Here to Help</p>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="info-container">
+            <div class="info-card">
+                <div class="info-icon">📞</div>
+                <h3>Phone Numbers</h3>
+                <p><strong>0723 726 530</strong></p>
+                <p><strong>0716 164 958</strong></p>
+                <p><strong>0741 948 340</strong></p>
+                <p>Available Monday - Friday, 9AM - 5PM</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">📍</div>
+                <h3>Our Branch</h3>
+                <p><strong>South B Branch</strong></p>
+                <p>Ready to Experience JUBAT Purity?</p>
+                <p>Contact our dedicated team today for deliveries, bulk orders, or to use our refill station.</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">💬</div>
+                <h3>WhatsApp</h3>
+                <p><strong>Orders & Delivery:</strong> +254751659527</p>
+                <p><strong>Scheduling & Refills:</strong> +254723726530</p>
+                <p>Quick and convenient for all your water needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <h2>Send us a Message</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="order">Place an Order</option>
+                    <option value="delivery">Delivery Inquiry</option>
+                    <option value="refill">Refill Station Info</option>
+                    <option value="bulk">Bulk Order</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <h2>Quick Actions</h2>
+        <div class="actions-grid">
+            <div class="action-card">
+                <h3>Order Now</h3>
+                <p>Ready to get your JUBAT water delivered?</p>
+                <button class="btn btn-secondary" onclick="orderNow()">Contact WhatsApp</button>
+            </div>
+
+            <div class="action-card">
+                <h3>Schedule a Delivery</h3>
+                <p>Plan your delivery at a convenient time</p>
+                <button class="btn btn-secondary" onclick="scheduleOrder()">Schedule Now</button>
+            </div>
+
+            <div class="action-card">
+                <h3>Bulk Orders</h3>
+                <p>Need water for your business or event?</p>
+                <button class="btn btn-secondary" onclick="orderNow()">Get a Quote</button>
+            </div>
+
+            <div class="action-card">
+                <h3>Refill Station Info</h3>
+                <p>Learn about our eco-friendly refill service</p>
+                <button class="btn btn-secondary" onclick="scheduleOrder()">More Info</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h4>How quickly can you deliver?</h4>
+                <p>We offer same-day and next-day delivery options depending on your location in Nairobi. Contact us for exact delivery times.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What areas do you deliver to?</h4>
+                <p>We primarily serve Nairobi and surrounding areas. Please contact us to confirm delivery to your specific location.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Is the water safe for all ages?</h4>
+                <p>Yes! JUBAT purified water is safe for infants, children, and adults. It's perfect for preparing baby formula and family meals.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Can I schedule regular deliveries?</h4>
+                <p>Absolutely! We offer subscription plans for regular deliveries. Contact us to set up a customized delivery schedule.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How does the refill service work?</h4>
+                <p>Bring your clean containers to our South B Branch and we'll fill them with fresh, purified water at a fraction of the cost of bottled water.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What payment methods do you accept?</h4>
+                <p>We accept cash, M-Pesa, and bank transfers. Ask about corporate account options for bulk orders.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Banner -->
+    <section class="footer-banner">
+        <h2>Ready to Experience JUBAT Purity?</h2>
+        <p>Contact our dedicated South B Branch team today for deliveries, bulk orders, or to use our refill station.</p>
+        <div class="footer-banner-buttons">
+            <button class="btn btn-primary" onclick="orderNow()">Order Now</button>
+            <button class="btn btn-secondary" onclick="scheduleOrder()">Schedule Order</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>JUBAT Purified Drinking Water</h4>
+                <p>The Modern Standard for Pure Hydration</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>📞 0723 726 530</p>
+                <p>📞 0716 164 958</p>
+                <p>📞 0741 948 340</p>
+                <p>📍 South B Branch</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="quality.html">Quality</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 JUBAT Purified Drinking Water. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="logic.js"></script>
+</body>
+</html>

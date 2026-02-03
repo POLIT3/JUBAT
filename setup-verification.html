@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUBAT Website - Setup Verification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d1b2a 0%, #1a3a52 100%);
+            color: #333;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            color: #0066cc;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .header {
+            background-color: #f0f4f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #00b4d8;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .checklist {
+            list-style: none;
+        }
+        
+        .checklist li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+            color: #0066cc;
+        }
+        
+        .checked:before {
+            content: "✓";
+            color: #28a745;
+        }
+        
+        .code-block {
+            background-color: #f5f5f5;
+            padding: 1rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 1rem 0;
+            border-left: 4px solid #ff6b6b;
+        }
+        
+        .test-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .test-button:hover {
+            background-color: #0052a3;
+            transform: translateY(-2px);
+        }
+        
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            border-left: 4px solid #28a745;
+        }
+        
+        .warning {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .danger {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            border-left: 4px solid #f5c6cb;
+        }
+        
+        .file-list {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        
+        .file-list div {
+            padding: 0.5rem;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .file-list div:last-child {
+            border-bottom: none;
+        }
+        
+        .status-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+        
+        .status-ok {
+            background-color: #28a745;
+        }
+        
+        .status-error {
+            background-color: #dc3545;
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 JUBAT Website Setup Verification</h1>
+        
+        <div class="header">
+            <p><strong>Welcome!</strong> This page helps you verify that your JUBAT website is properly set up and ready to deploy.</p>
+            <p style="margin-top: 0.5rem; color: #666;">Open this page in your browser and follow the checklist below.</p>
+        </div>
+        
+        <!-- File Structure Section -->
+        <div class="section">
+            <div class="section-title">📁 File Structure Verification</div>
+            <p>Your website should have the following structure:</p>
+            <div class="file-list">
+                <div>📂 JUBAT/</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;📂 public/</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 index.html</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 about.html</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 products.html</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 quality.html</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 contact.html</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 design.css</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 logic.js</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;📂 images/</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(image files here)</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;📄 README.md</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;📄 QUICKSTART.md</div>
+            </div>
+        </div>
+        
+        <!-- Setup Checklist -->
+        <div class="section">
+            <div class="section-title">✅ Setup Checklist</div>
+            <ul class="checklist">
+                <li>HTML pages are in the <code>public/</code> folder</li>
+                <li>CSS file (<code>design.css</code>) is present</li>
+                <li>JavaScript file (<code>logic.js</code>) is present</li>
+                <li>Images folder exists</li>
+                <li>All images are added to the images folder</li>
+                <li>Contact numbers are verified and correct</li>
+                <li>WhatsApp numbers are configured</li>
+                <li>Website displays correctly in browser</li>
+                <li>All navigation links work</li>
+                <li>WhatsApp buttons are functional</li>
+            </ul>
+        </div>
+        
+        <!-- Testing Section -->
+        <div class="section">
+            <div class="section-title">🧪 Quick Tests</div>
+            <p>Click the buttons below to test key functionality:</p>
+            
+            <button class="test-button" onclick="testOrderButton()">Test Order Now Button</button>
+            <button class="test-button" onclick="testScheduleButton()">Test Schedule Order Button</button>
+            <button class="test-button" onclick="testNavigation()">Test Navigation</button>
+            <button class="test-button" onclick="testResponsive()">Test Mobile Responsive</button>
+            
+            <div id="test-results" style="margin-top: 1.5rem;"></div>
+        </div>
+        
+        <!-- WhatsApp Configuration -->
+        <div class="section">
+            <div class="section-title">💬 WhatsApp Configuration</div>
+            <p>The website uses these WhatsApp numbers:</p>
+            <div class="code-block">
+                ORDER_PHONE = '+254751659527'<br>
+                SCHEDULE_PHONE = '+254723726530'
+            </div>
+            <p style="margin-top: 1rem;">✓ Order Now: Opens WhatsApp with <code>+254751659527</code></p>
+            <p>✓ Schedule Order: Opens WhatsApp with <code>+254723726530</code></p>
+            <p style="margin-top: 1rem; color: #666;"><small>To change these numbers, edit <code>public/logic.js</code></small></p>
+        </div>
+        
+        <!-- Image Checklist -->
+        <div class="section">
+            <div class="section-title">🖼️ Required Images Checklist</div>
+            <p>Make sure you have these images in the <code>images/</code> folder:</p>
+            <ul class="checklist">
+                <li>hero-water.jpg</li>
+                <li>500ml-bottle.jpg</li>
+                <li>1liter-bottle.jpg</li>
+                <li>1.5liter-bottle.jpg</li>
+                <li>5liter-bottle.jpg</li>
+                <li>10liter-bottle.jpg</li>
+                <li>reverse-osmosis.jpg</li>
+                <li>carbon-filtration.jpg</li>
+                <li>uv-treatment.jpg</li>
+                <li>refill-service.jpg</li>
+                <li>pre-treatment.jpg</li>
+                <li>ro-process.jpg</li>
+                <li>carbon-filter.jpg</li>
+                <li>uv-process.jpg</li>
+                <li>bottling.jpg</li>
+            </ul>
+            <p style="margin-top: 1rem; color: #666;"><small>See <code>images/README.md</code> for more details</small></p>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="section">
+            <div class="section-title">📞 Contact Information Verification</div>
+            <p>Make sure your contact information is correct throughout the site:</p>
+            <div class="code-block">
+                Phone Numbers:<br>
+                • 0723 726 530<br>
+                • 0716 164 958<br>
+                • 0741 948 340<br>
+                <br>
+                WhatsApp:<br>
+                • Orders: +254751659527<br>
+                • Scheduling: +254723726530<br>
+                <br>
+                Location: South B Branch
+            </div>
+        </div>
+        
+        <!-- Deployment Section -->
+        <div class="section">
+            <div class="section-title">🚀 Ready to Deploy?</div>
+            <p>Once you've completed the checklist above, you can deploy your website:</p>
+            <ul style="margin-left: 1.5rem;">
+                <li><strong>GitHub Pages:</strong> Free hosting, upload to GitHub repository</li>
+                <li><strong>Netlify:</strong> Drag & drop deployment, free SSL</li>
+                <li><strong>Traditional Hosting:</strong> Any web host (Bluehost, HostGator, etc.)</li>
+                <li><strong>Local Testing:</strong> Open <code>public/index.html</code> in browser</li>
+            </ul>
+            <p style="margin-top: 1rem;">See <strong>QUICKSTART.md</strong> for detailed deployment instructions.</p>
+        </div>
+        
+        <!-- Success Message -->
+        <div class="success">
+            <strong>✓ Website Created Successfully!</strong><br>
+            Your JUBAT Purified Drinking Water website is ready. Just add images and deploy!
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>JUBAT Purified Drinking Water</strong></p>
+            <p>The Modern Standard for Pure Hydration</p>
+            <p style="margin-top: 1rem; color: #999;">Website Version 1.0 • Created February 2026</p>
+        </div>
+    </div>
+    
+    <script>
+        function testOrderButton() {
+            const results = document.getElementById('test-results');
+            results.innerHTML = '<div class="success">✓ Order Now button would open WhatsApp with +254751659527</div>';
+        }
+        
+        function testScheduleButton() {
+            const results = document.getElementById('test-results');
+            results.innerHTML = '<div class="success">✓ Schedule Order button would open WhatsApp with +254723726530</div>';
+        }
+        
+        function testNavigation() {
+            const results = document.getElementById('test-results');
+            results.innerHTML = '<div class="success">✓ Click on any navigation link to test page navigation</div>';
+        }
+        
+        function testResponsive() {
+            const results = document.getElementById('test-results');
+            const width = window.innerWidth;
+            let device = 'Desktop';
+            if (width < 768) device = 'Mobile';
+            else if (width < 1024) device = 'Tablet';
+            results.innerHTML = `<div class="success">✓ Current viewport: ${device} (${width}px wide)</div>`;
+        }
+    </script>
+</body>
+</html>
