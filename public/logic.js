@@ -1,5 +1,5 @@
 // WhatsApp Integration for JUBAT
-const ORDER_PHONE = '+254751659527';
+const ORDER_PHONE = '+254758588409';
 const SCHEDULE_PHONE = '+254723726530';
 
 /**
