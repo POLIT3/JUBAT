@@ -1,6 +1,6 @@
-// WhatsApp Integration for JUBAT
-const ORDER_PHONE = '+254758588409';
-const SCHEDULE_PHONE = '+254723726530';
+// WhatsApp Integration
+const ORDER_PHONE = '+254786831229';
+const SCHEDULE_PHONE = '+254786831229';
 
 /**
  * Function to handle Order Now button click
@@ -8,7 +8,7 @@ const SCHEDULE_PHONE = '+254723726530';
  */
 function orderNow() {
     const message = encodeURIComponent(
-        'Hello JUBAT! I would like to place an order for purified drinking water. Please let me know the available options and delivery details. Thank you!'
+        'Hello! I would like to place an order for purified drinking water. Please let me know the available options and delivery details. Thank you!'
     );
     const whatsappURL = `https://wa.me/${ORDER_PHONE.replace(/^\+/, '')}?text=${message}`;
     window.open(whatsappURL, '_blank');
@@ -20,7 +20,7 @@ function orderNow() {
  */
 function scheduleOrder() {
     const message = encodeURIComponent(
-        'Hello JUBAT! I would like to schedule a delivery or book a refill at your South B Branch. Please let me know the available time slots. Thank you!'
+        'Hello! I would like to schedule a delivery or book a refill. Please let me know the available time slots. Thank you!'
     );
     const whatsappURL = `https://wa.me/${SCHEDULE_PHONE.replace(/^\+/, '')}?text=${message}`;
     window.open(whatsappURL, '_blank');
